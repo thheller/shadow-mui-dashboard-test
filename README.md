@@ -1,30 +1,13 @@
-# shadow-cljs, proto-repl, reagent template
 
-`shadow-cljs` is a build tool for ClojureScript.
 
-`proto-repl` is a Clojure(Script) dev env for [Atom](https://atom.io/)
-
-`reagent` is a ClojureScript wrapper for [React](https://reactjs.org/).
-
-## Setup And Run
-#### Copy repository
-```shell
-git clone https://github.com/jacekschae/shadow-reagent.git && cd shadow-reagent
+```
+cd vendor/material-dashboard-react
+npm install
+npx babel src -d ../../src/gen/material-dashboard-react
 ```
 
-#### Install dependencies
-```shell
-yarn install || npm install
 ```
-
-#### Run dev server
-```shell
-yarn dev || npm run dev
+npm install
+npx shadow-cljs watch app
+open http://localhost:3000
 ```
-
-#### Compile an optimized version
-
-```shell
-yarn release || npm run release
-```
-
