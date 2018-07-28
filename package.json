@@ -1,0 +1,40 @@
+{
+  "name": "shadow-reagent",
+  "version": "0.0.1",
+  "description": "Template for shadow-cljs and reagent projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacekschae/shadow-reagent"
+  },
+  "author": {
+    "name": "Jacek Schae",
+    "email": "jacek.schae@gmail.com"
+  },
+  "license": "EPL-2.0",
+  "scripts": {
+    "dev": "shadow-cljs watch app;",
+    "release": "shadow-cljs release app;",
+    "server": "shadow-cljs server;",
+    "clean": "rm -rf target; rm -rf public/js"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "@material-ui/core": "1.4.1",
+    "@material-ui/icons": "2.0.0",
+    "@types/googlemaps": "3.30.11",
+    "@types/markerclustererplus": "2.1.33",
+    "ajv": "6.5.2",
+    "chartist": "0.10.1",
+    "classnames": "2.2.6",
+    "perfect-scrollbar": "1.4.0",
+    "react-chartist": "0.13.1",
+    "react-google-maps": "9.4.5",
+    "react-router-dom": "4.3.1",
+    "react-swipeable-views": "0.12.15"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.4.24"
+  }
+}

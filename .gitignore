@@ -1,0 +1,9 @@
+/node_modules
+/tmp
+/target
+/public/js
+.shadow-cljs
+.nrepl-port
+.idea
+yarn.lock
+package-lock.json

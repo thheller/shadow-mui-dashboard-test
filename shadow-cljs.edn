@@ -1,0 +1,18 @@
+{:source-paths
+ ["src/main"
+  "src/gen"]
+
+ :dependencies
+ [[binaryage/devtools "0.9.10"]
+  [reagent "0.8.1"]]
+
+ :nrepl {:port 3333}
+
+ :builds
+ {:app {:target :browser
+        :modules {:main {:entries [app.core]}}
+
+        :devtools
+        {:http-root "public"
+         :http-port 3000
+         :loader-mode :eval}}}}
